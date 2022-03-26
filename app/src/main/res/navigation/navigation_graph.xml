@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.navigationproject.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/Maintosecond"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/maintothrid"
+            app:destination="@id/thridFragment" />
+        <action
+            android:id="@+id/maintoforth"
+            app:destination="@id/forthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.navigationproject.ui.main.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/thridFragment"
+        android:name="com.example.navigationproject.ui.main.ThridFragment"
+        android:label="fragment_thrid"
+        tools:layout="@layout/fragment_thrid" />
+    <fragment
+        android:id="@+id/forthFragment"
+        android:name="com.example.navigationproject.ForthFragment"
+        android:label="fragment_forth"
+        tools:layout="@layout/fragment_forth" />
+</navigation>
