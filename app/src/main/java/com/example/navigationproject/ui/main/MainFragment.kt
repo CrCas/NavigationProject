@@ -33,7 +33,7 @@ class MainFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         binding.button.setOnClickListener {
-            val action: MainFragmentDirections.Maintosecond = MainFragmentDirections.maintosecond()
+            val action: MainFragmentDirections.maintosecond = MainFragmentDirections.maintosecond()
 
             action.setImage(binding.imageView.setImageDrawable(getResources().getDrawable(R.drawable.android_image_1)))
             Navigation.findNavController(it).navigate(action)

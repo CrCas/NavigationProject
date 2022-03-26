@@ -14,10 +14,10 @@
             android:id="@+id/Maintosecond"
             app:destination="@id/secondFragment" />
         <action
-            android:id="@+id/maintothrid"
+            android:id="@+id/Maintothrid"
             app:destination="@id/thridFragment" />
         <action
-            android:id="@+id/maintoforth"
+            android:id="@+id/Maintoforth"
             app:destination="@id/forthFragment" />
     </fragment>
     <fragment
